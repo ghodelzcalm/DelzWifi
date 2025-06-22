@@ -10,7 +10,7 @@ $ apt update && apt upgrade
 $ pkg install -y root-repo
 $ pkg install -y git tsu python wpa-supplicant pixiewps iw
 $ git clone https://github.com/ghodelzcalm/DelzWifi
-$ cd Wifi_Hack
+$ cd DelzWifi
 $ chmod +x birihack.py
 $ sudo python birihack.py --help
 ```
