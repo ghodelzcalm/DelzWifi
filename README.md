@@ -15,7 +15,12 @@ $ chmod +x birihack.py
 $ sudo python birihack.py --help
 ```
 
-#### Example : `sudo python birihack.py -i wlan0 -K`
+#### Example : 
+cd DelzWifi
+
+chmod +x birihack.py
+
+sudo python birihack.py -i wlan0 -K
 
 #### Note: 
 **First turn off your Wifi.**
