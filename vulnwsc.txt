@@ -1,6 +1,81 @@
 ADSL RT2860
 AIR3G WSC Wireless Access Point AIR3G WSC Device
 AirLive Wireless Gigabit AP AirLive Wireless Gigabit AP
+Netis WF2411
+Prolink PRC3801
+Linksys MR8300
+Alcatel
+Alcatel	I-240G-T
+Google Nest
+Netgear R7800-Nighthawk X4S AC2600
+ZTE
+ZTE F609
+ZTE F660
+ZTE	F670
+Huawei
+Huawei	HG8245H
+Huawei	HG8245H5
+Huawei	HG8145V5
+EnGenius
+D-Link DIR-612 Wireless N 300 
+Cisco
+technicolor
+Buffalo
+Edimax
+Sagemcom
+SMC
+Actiontec
+LevelOne
+Arris
+ZyXEL
+TRENDnet
+Tenda
+Tenda N301
+Tenda AC23
+Tenda F9
+Tenda F4
+Tenda F5
+Tenda F6
+Tenda F7
+Tenda F8
+Belkin
+Linksys
+XIOAMI
+D-Link
+ASUS
+Asus RT-AC1200
+Asus RT-AC59U V2
+TP-LINK
+TP-Link Archer C20
+TP-Link TL-WR845N
+Netgear
+Nokia
+Nokia	G-240W-F
+ICONNET
+RT-AC68U
+CBN Fiber
+MNC Play
+MyRepublic
+Indihome
+HG8245A
+HG8245H5
+HG6243C
+Corpnet
+Megavision
+Biznet Home
+First Media
+XL Fiber
+FiberHome
+fiberhome hg6243c
+FiberHome	AN5506-04-FA
+FiberHome	HG6243C
+Asus RT-AC58U AC1300
+Mikrotik RB 951 UI-2Hnd
+Huawei B311
+Netgear Nighthawk RAX70
+Linksys EA6350
+D-Link DIR 612
+Xiaomi Mi WIFI Router 3 AC1200
 Archer_A9 1.0
 Archer A2 5.0
 Archer A5 4.0
@@ -139,3 +214,9 @@ ZyXEL NBG-416N AP Router
 ZyXEL NBG-418N AP Router
 ZyXEL NBG-418N AP Router NBG-418N
 ZyXEL Wireless AP Router NBG-417N
+TP-Link Archer AX10
+Tp-Link Archer C7
+ASUS RT-AX53U
+Mi Router 4A Gigabit
+Xiaomi Mi Router 4C
+Xiaomi Mi 4C
