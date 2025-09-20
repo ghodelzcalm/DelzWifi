@@ -6,13 +6,13 @@
 ### Installation :
 
 ```bash
-$ apt update && apt upgrade
-$ pkg install -y root-repo
-$ pkg install -y git tsu python wpa-supplicant pixiewps iw
-$ git clone https://github.com/ghodelzcalm/DelzWifi
-$ cd DelzWifi
-$ chmod +x birihack.py
-$ sudo python birihack.py --help
+$$ apt update && apt upgrade
+$$ pkg install -y root-repo
+$$ pkg install -y git tsu python wpa-supplicant pixiewps iw
+$$ git clone https://github.com/ghodelzcalm/DelzWifi
+$$ cd DelzWifi
+$$ chmod +x birihack.py
+$$ sudo python birihack.py --help
 ```
 
 #### Example : 
@@ -21,6 +21,10 @@ cd DelzWifi
 chmod +x birihack.py
 
 sudo python birihack.py -i wlan0 -K
+
+## Express
+
+sudo python DelzWifi/birihack.py -i wlan0 -K
 
 #### Note: 
 **First turn off your Wifi.**
