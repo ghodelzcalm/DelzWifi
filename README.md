@@ -1,5 +1,5 @@
 ## DelzWifi
-### Hack WIfi Using Termux! (Requires Root)
+### Hack WIfi Mengunakan Termux! (Requires Root)
 
 <p align="center"><img src="https://i.ibb.co/K74g0SC/hulu.jpg"></p>
 
@@ -23,18 +23,24 @@ cd DelzWifi
 chmod +x birihack.py
 
 sudo python birihack.py -i wlan0 -K
+```
+
 
 ## UPDATE
 
 ```bash
 
 (cd DelzWifi && git pull)
+```
+
 
 ## Express
 
 ```bash
 
 sudo python DelzWifi/birihack.py -i wlan0 -K
+```
+
 
 #### Note: 
 **First turn off your Wifi.**
