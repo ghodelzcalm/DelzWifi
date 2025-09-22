@@ -7,7 +7,9 @@ Linksys MR8300
 Alcatel
 Alcatel	I-240G-T
 Google Nest
+DIR-615
 Netgear R7800-Nighthawk X4S AC2600
+ZXHN F160A
 ZTE
 ZTE F609
 ZTE F660
