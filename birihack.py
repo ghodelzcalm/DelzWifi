@@ -99,18 +99,16 @@ class WPSpin:
                       'pin28': {'name': '28-bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin28},
                       'pin32': {'name': '32-bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin32},
                       'pin36': {'name': '36-bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin36},                     
-                      'pin40': {'name': '40-bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin40},                   
-                      'pin44': {'name': '44bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin44},                    
-                      'pin48': {'name': '48-bit PIN', 'mode': self.ALGO_MAC, 'gen': self.pin48},                     
+        
                       'pin24rh': {'name': 'Reverse byte 24-bit', 'mode': self.ALGO_MAC, 'gen': self.pin24rh},
                       'pin32rh': {'name': 'Reverse byte 32-bit', 'mode': self.ALGO_MAC, 'gen': self.pin32rh},
-                     'pin48rh': {'name': 'Reverse byte 48-bit', 'mode': self.ALGO_MAC, 'gen': self.pin48rh},
+
                      'pin24rn': {'name': 'Reverse nibble 24-bit', 'mode': self.ALGO_MAC, 'gen': self.pin24rn},
                       'pin32rn': {'name': 'Reverse nibble 32-bit', 'mode': self.ALGO_MAC, 'gen': self.pin32rn},
-                      'pin48rn': {'name': 'Reverse nibble 48-bit', 'mode': self.ALGO_MAC, 'gen': self.pin48rn},
+
                       'pin24rb': {'name': 'Reverse bits 24-bit', 'mode': self.ALGO_MAC, 'gen': self.pin24rb},
                       'pin32rb': {'name': 'Reverse bits 32-bit', 'mode': self.ALGO_MAC, 'gen': self.pin32rb},
-                      'pin48rb': {'name': 'Reverse bits 48-bit', 'mode': self.ALGO_MAC, 'gen': self.pin48rb},                    
+            
                       'pinDLink': {'name': 'D-Link PIN', 'mode': self.ALGO_MAC, 'gen': self.pinDLink},
                       'pinDLink1': {'name': 'D-Link PIN +1', 'mode': self.ALGO_MAC, 'gen': self.pinDLink1},
                       'pinASUS': {'name': 'ASUS PIN', 'mode': self.ALGO_MAC, 'gen': self.pinASUS},
@@ -298,14 +296,6 @@ class WPSpin:
 def pin36(self, mac):
         return (mac.integer % 0x1000000000)
 
-    def pin40(self, mac):
-        return (mac.integer % 0x10000000000)
-
-    def pin44(self, mac):
-        return (mac.integer % 0x100000000000)
-
-    def pin48(self, mac):
-        return mac.integer
 
     def pin24rh(self, mac):
         b = [i for i in mac.string.split(':')]
@@ -315,9 +305,7 @@ def pin36(self, mac):
         b = [i for i in mac.string.split(':')]
         return int(''.join(b[-1:-5:-1]), 16)
 
-    def pin48rh(self, mac):
-        b = [i for i in mac.string.split(':')]
-        return int(''.join(b[-1::-1]), 16)
+
 
     def pin24rn(self, mac):
         return int(mac.string.replace(':', '')[-1:-7:-1], 16)
@@ -325,8 +313,7 @@ def pin36(self, mac):
     def pin32rn(self, mac):
         return int(mac.string.replace(':', '')[-1:-9:-1], 16)
 
-    def pin48rn(self, mac):
-        return int(mac.string.replace(':', '')[-1::-1], 16)
+
 
     def pin24rb(self, mac):
         return int(bin(mac.integer)[2:].zfill(24)[:-25:-1], 2)
@@ -334,8 +321,7 @@ def pin36(self, mac):
     def pin32rb(self, mac):
         return int(bin(mac.integer)[2:].zfill(32)[:-33:-1], 2)
 
-    def pin48rb(self, mac):
-        return int(bin(mac.integer)[2:].zfill(48)[::-1], 2)
+
                 
     def pinDLink(self, mac):
         # Get the NIC part
