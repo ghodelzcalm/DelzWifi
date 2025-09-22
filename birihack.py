@@ -89,7 +89,7 @@ class NetworkAddress:
             self._str_repr, self._int_repr)
 
 class WPSpin:
-   '''WPS pin generator'''
+    """WPS pin generator"""
     def __init__(self):
         self.ALGO_MAC = 0
         self.ALGO_EMPTY = 1
