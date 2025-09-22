@@ -16,6 +16,8 @@
 ```
 
 #### Example : 
+
+```bash
 cd DelzWifi
 
 chmod +x birihack.py
@@ -24,9 +26,13 @@ sudo python birihack.py -i wlan0 -K
 
 ## UPDATE
 
+```bash
+
 (cd DelzWifi && git pull)
 
 ## Express
+
+```bash
 
 sudo python DelzWifi/birihack.py -i wlan0 -K
 
