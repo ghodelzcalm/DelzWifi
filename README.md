@@ -10,19 +10,14 @@ apt update && apt upgrade
 && pkg install -y root-repo
 && pkg install -y git tsu python wpa-supplicant pixiewps iw
 && git clone https://github.com/ghodelzcalm/DelzWifi
-&& cd DelzWifi
-&& chmod +x birihack.py
-&& sudo python birihack.py --help
+&& sudo python DelzWifi/birihack.py -i wlan0 -K
 ```
 
-#### Example : 
+## Langsung Menjalankan Perintah Script
 
 ```bash
-cd DelzWifi
 
-chmod +x birihack.py
-
-sudo python birihack.py -i wlan0 -K
+sudo python DelzWifi/birihack.py -i wlan0 -K
 ```
 
 
@@ -33,13 +28,6 @@ sudo python birihack.py -i wlan0 -K
 (cd DelzWifi && git pull)
 ```
 
-
-## Langsung Menjalankan Perintah Script
-
-```bash
-
-sudo python DelzWifi/birihack.py -i wlan0 -K
-```
 
 
 #### Note: 
