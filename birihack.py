@@ -103,8 +103,6 @@ class WPSpin:
                       'pinASUS': {'name': 'ASUS PIN', 'mode': self.ALGO_MAC, 'gen': self.pinASUS},
                       'pinAirocon': {'name': 'Airocon Realtek', 'mode': self.ALGO_MAC, 'gen': self.pinAirocon},
                       'pinInvNIC': {'name': 'Inv NIC to PIN', 'mode': self.ALGO_MAC, 'gen': self.pinInvNIC},
-                      'pinNIC2': {'name': 'NIC * 2', 'mode': self.ALGO_MAC, 'gen': self.pinNIC2},
-                      'pinNIC3': {'name': 'NIC * 3', 'mode': self.ALGO_MAC, 'gen': self.pinNIC3},
                       'pinOUIaddNIC': {'name': 'OUI + NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIaddNIC},
                       'pinOUIsubNIC': {'name': 'OUI − NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIsubNIC},
                       'pinOUIxorNIC': {'name': 'OUI ^ NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIxorNIC},       
@@ -323,15 +321,6 @@ def pinInvNIC(self, mac):
         pin = ~nic & 0xFFFFFF
         return pin
 
-    def pinNIC2(self, mac):
-        nic = mac.integer & 0xFFFFFF
-        pin = nic * 2
-        return pin
-
-    def pinNIC3(self, mac):
-        nic = mac.integer & 0xFFFFFF
-        pin = nic * 3
-        return pin
 
     def pinOUIaddNIC(self, mac):
         mac = mac.string.replace(':', '')
