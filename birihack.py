@@ -103,9 +103,7 @@ class WPSpin:
                       'pinASUS': {'name': 'ASUS PIN', 'mode': self.ALGO_MAC, 'gen': self.pinASUS},
                       'pinAirocon': {'name': 'Airocon Realtek', 'mode': self.ALGO_MAC, 'gen': self.pinAirocon},
                       'pinInvNIC': {'name': 'Inv NIC to PIN', 'mode': self.ALGO_MAC, 'gen': self.pinInvNIC},
-                      'pinOUIaddNIC': {'name': 'OUI + NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIaddNIC},
-                      'pinOUIsubNIC': {'name': 'OUI − NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIsubNIC},
-                      'pinOUIxorNIC': {'name': 'OUI ^ NIC', 'mode': self.ALGO_MAC, 'gen': self.pinOUIxorNIC},       
+                      '
                        # Static pin algos
                       'pinEmpty': {'name': 'Empty PIN', 'mode': self.ALGO_EMPTY, 'gen': lambda mac: ''},
                       'pinCisco': {'name': 'Cisco', 'mode': self.ALGO_STATIC, 'gen': lambda mac: 1234567},
@@ -319,28 +317,6 @@ class WPSpin:
 def pinInvNIC(self, mac):
         nic = mac.integer & 0xFFFFFF
         pin = ~nic & 0xFFFFFF
-        return pin
-
-
-    def pinOUIaddNIC(self, mac):
-        mac = mac.string.replace(':', '')
-        oui = int(mac[:6], 16)
-        nic = int(mac[6:], 16)
-        pin = (oui + nic) % int(10e6)
-        return pin
-
-    def pinOUIsubNIC(self, mac):
-        mac = mac.string.replace(':', '')
-        oui = int(mac[:6], 16)
-        nic = int(mac[6:], 16)
-        pin = oui - nic if nic < oui else (oui + 0x1000000 - nic) & 0xFFFFFF
-        return pin
-
-    def pinOUIxorNIC(self, mac):
-        mac = mac.string.replace(':', '')
-        oui = int(mac[:6], 16)
-        nic = int(mac[6:], 16)
-        pin = oui ^ nic
         return pin
 
 def recvuntil(pipe, what):
