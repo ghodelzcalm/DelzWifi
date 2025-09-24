@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 #Open Source Code.No Need More Modification.
+
 import sys
 import subprocess
 import os
@@ -17,6 +18,21 @@ import statistics
 import csv
 from typing import Dict
 
+# -*- coding: utf-8 -*-
+# Modify History : rofl0r => GHODELZ CALM
+# VERSION 1.0.1
+# Open Source Code.No Need More Modification.
+import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, collections, csv, http.client, marshal
+from time import sleep 
+from datetime import datetime
+from typing import Dict
+now = datetime.now()
+now_time = str(now.strftime("%d:%m:%Y - %H:%M:%S"))
+def ani(z):
+	for e in z + '\n':
+		sys.stdout.write(e)
+		sys.stdout.flush()
+		time.sleep(0.004)
 print('''
 \033[1;92m Recoded By Ghodelzcalm
 
