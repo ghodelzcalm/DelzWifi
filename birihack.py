@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Modify History : rofl0r => GHODELZ CALM
-# VERSION 1.0.1
-# Open Source Code.No Need More Modification.
-import sys, subprocess, os, tempfile, shutil, re, codecs, socket, pathlib, time, collections, statistics, collections, csv, http.client, marshal
-from time import sleep 
+#Open Source Code.No Need More Modification.
+import sys
+import subprocess
+import os
+import tempfile
+import shutil
+import re
+import codecs
+import socket
+import pathlib
+import time
 from datetime import datetime
+import collections
+import statistics
+import csv
 from typing import Dict
-now = datetime.now()
-now_time = str(now.strftime("%d:%m:%Y - %H:%M:%S"))
-def ani(z):
-	for e in z + '\n':
-		sys.stdout.write(e)
-		sys.stdout.flush()
-		time.sleep(0.004)
+
 print('''
 \033[1;92m Recoded By Ghodelzcalm
 
-One line Command:\nsudo python Wifi_Hack/birihack.py -i wlan0 -K\n
-For Help Type:\npython Wifi_Hack/birihack.py --help\033[0m
+One line Command:\nsudo python DelzWifi/birihack.py -i wlan0 -K\n
+For Help Type:\npython DelzWifi/birihack.py --help\033[0m
 ''')
 class NetworkAddress:
     def __init__(self, mac):
