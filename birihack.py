@@ -685,7 +685,7 @@ class Companion:
                     filename = self.pixiewps_dir + '{}.run'.format(bssid.replace(':', '').upper())
                     with open(filename, 'r') as file:
                         t_pin = file.readline().strip()
-                        if input('[\033[1;33m?\033[1;37m] Use previously calculated PIN {}? [n/Y] '.format(t_pin)).lower() != 'n':
+                        if input('[?] Use previously calculated PIN {}? [n/Y] '.format(t_pin)).lower() != 'n':
                             pin = t_pin
                         else:
                             raise FileNotFoundError
@@ -699,7 +699,7 @@ class Companion:
             try:
                 self.__wps_connection(bssid, pin, pixiemode)
             except KeyboardInterrupt:
-                print("\https://github.com/ghodelzcalm/DelzWifi…")
+                print("\nAborting…")
                 self.__savePin(bssid, pin)
                 return False
         else:
@@ -723,7 +723,7 @@ class Companion:
                     return self.single_connection(bssid, pin, pixiemode=False, store_pin_on_fail=True)
                 return False
             else:
-                print('[\033[1;31m!\033[1;37m] Not enough data to run Pixie Dust attack')
+                print('[!] Not enough data to run Pixie Dust attack')
                 return False
         else:
             if store_pin_on_fail:
